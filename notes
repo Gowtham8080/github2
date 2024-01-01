@@ -1,0 +1,261 @@
+PS C:\Users\91805\Desktop\Git> git clone https://github.com/Gowtham8080/github1.git
+Cloning into 'github1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+PS C:\Users\91805\Desktop\Git\github1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\91805\Desktop\Git\github1> git add test2.txt
+PS C:\Users\91805\Desktop\Git\github1> git status
+On branch main
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test2.txt
+
+PS C:\Users\91805\Desktop\Git\github1> git commit -m "test2.txt file added"
+[main 63bdf28] test2.txt file added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 283 bytes | 56.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Gowtham8080/github1.git
+   87630a9..63bdf28  main -> main
+PS C:\Users\91805\Desktop\Git\github1>
+PS C:\Users\91805\Desktop\Git\github1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\91805\Desktop\Git\github1> git add test3.txt
+PS C:\Users\91805\Desktop\Git\github1> git status
+On branch main
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test2.txt
+
+PS C:\Users\91805\Desktop\Git\github1> git commit -m "Test3.txt file added"
+[main 3909ea1] Test3.txt file added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test3.txt
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test2.txt
+Enumerating objects: 4, done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 316 bytes | 63.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Gowtham8080/github1.git
+   63bdf28..3909ea1  main -> main
+PS C:\Users\91805\Desktop\Git\github1> git add test2.txt
+PS C:\Users\91805\Desktop\Git\github1> git commit -m "Modified test2.txt file"
+ 1 file changed, 1 insertion(+)
+PS C:\Users\91805\Desktop\Git\github1> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 325 bytes | 46.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Gowtham8080/github1.git
+On branch main
+Your branch is up to date with 'origin/main'.
+
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    test3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\91805\Desktop\Git\github1> git add test3.txt
+PS C:\Users\91805\Desktop\Git\github1> git commit -m "deleted test3.txt file"
+[main f1775b0] deleted test3.txt file
+ delete mode 100644 test3.txt
+PS C:\Users\91805\Desktop\Git\github1> git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 276 bytes | 69.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Gowtham8080/github1.git
+   864c7c1..f1775b0  main -> main
+PS C:\Users\91805\Desktop\Git\github1> git pull 
+remote: Enumerating objects: 4, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 700 bytes | 2.00 KiB/s, done.
+From https://github.com/Gowtham8080/github1
+   f1775b0..b02a18f  main       -> origin/main
+Updating f1775b0..b02a18f
+Fast-forward
+ dummy.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 dummy.txt
+PS C:\Users\91805\Desktop\Git\github1> git pull
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 694 bytes | 2.00 KiB/s, done.
+From https://github.com/Gowtham8080/github1
+   b02a18f..3700317  main       -> origin/main
+Updating b02a18f..3700317
+Fast-forward
+ test2.txt | 2 +-
+PS C:\Users\91805\Desktop\Git> cd githum2
+At line:1 char:1
++ cd githum2
++ ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\91805\Desktop\Git\githum2:String) [Set-Location], ItemNotFo  
+   undException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS C:\Users\91805\Desktop\Git> cd github2
+PS C:\Users\91805\Desktop\Git\github2> git init
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\91805\Desktop\Git\github2> git status
+On branch master
+
+No commits yet
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+[master (root-commit) ac91d47] Created index.html and style.css
+ 2 files changed, 1 insertion(+)
+PS C:\Users\91805\Desktop\Git\github2> git push origin main
+error: failed to push some refs to 'origin'
+PS C:\Users\91805\Desktop\Git\github2> git branch
+PS C:\Users\91805\Desktop\Git\github2> git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Gowtham8080/github2.git'
+PS C:\Users\91805\Desktop\Git\github2> git branch -M main
+PS C:\Users\91805\Desktop\Git\github2> git branch
+* main
+PS C:\Users\91805\Desktop\Git\github2> git push origin main
+fatal: unable to access 'https://github.com/Gowtham8080/github2.git/': Could not resolve host: github.com
+PS C:\Users\91805\Desktop\Git\github2> git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Gowtham8080/github2.git
+ * [new branch]      main -> main
+PS C:\Users\91805\Desktop\Git\github2> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   tests.txt
+
+PS C:\Users\91805\Desktop\Git\github2> git commit -m "Created tests.txt file"
+[main 76edb41] Created tests.txt file
+ create mode 100644 tests.txt
+PS C:\Users\91805\Desktop\Git\github2> git push origin main
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Writing objects: 100% (3/3), 331 bytes | 165.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Gowtham8080/github2.git
+   ac91d47..76edb41  main -> main
+PS C:\Users\91805\Desktop\Git\github2> git branch -a
+* main
+  remotes/origin/main
+PS C:\Users\91805\Desktop\Git\github2> git branch -a
+* main
+  remotes/origin/main
+PS C:\Users\91805\Desktop\Git\github2> git pull
+From https://github.com/Gowtham8080/github2
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+    git pull <remote> <branch>
+
+
+    git branch --set-upstream-to=origin/<branch> main
+
+PS C:\Users\91805\Desktop\Git\github2> git branch -a
+  remotes/origin/gitbranch1
+  remotes/origin/main
+PS C:\Users\91805\Desktop\Git\github2> git checkout gitbranch1
+Switched to a new branch 'gitbranch1'
+branch 'gitbranch1' set up to track 'origin/gitbranch1'.
+PS C:\Users\91805\Desktop\Git\github2> git branch -a
+* gitbranch1
+  main
+PS C:\Users\91805\Desktop\Git\github2> git status
+On branch gitbranch1
+Your branch is up to date with 'origin/gitbranch1'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        newfile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\91805\Desktop\Git\github2> git add .
+PS C:\Users\91805\Desktop\Git\github2> git commit -m "Created newfile.txt file"
+[gitbranch1 667b051] Created newfile.txt file
+ create mode 100644 newfile.txt
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Compressing objects: 100% (2/2), done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Gowtham8080/github2.git
+   76edb41..667b051  gitbranch1 -> gitbranch1
+Switched to branch 'main'
+PS C:\Users\91805\Desktop\Git\github2> git checkout gitbranch1
+Switched to branch 'gitbranch1'
+Your branch is up to date with 'origin/gitbranch1'.
+PS C:\Users\91805\Desktop\Git\github2> git checkout main
+PS C:\Users\91805\Desktop\Git\github2> git diff gitbranch1
+diff --git a/newfile.txt b/newfile.txt
+deleted file mode 100644
+index e69de29..0000000
+PS C:\Users\91805\Desktop\Git\github2> git merge gitbranch1
+Updating 76edb41..667b051
+Fast-forward
+ newfile.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 newfile.txt
+PS C:\Users\91805\Desktop\Git\github2> git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Gowtham8080/github2.git
+   76edb41..667b051  main -> main
+PS C:\Users\91805\Desktop\Git\github2> 
